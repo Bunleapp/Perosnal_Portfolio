@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content ="width=device-width, intiial-scale=1.0" >
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <main>
+        <aside class="sidebar" data-sidebar>
+                <div class="top-sidebar">
+                   <figure class="profile-pic">
+                       <img src="https://avatars.githubusercontent.com/u/229440162?v=4" alt="Profile Photo" width="80">
+                   </figure>
+
+                    <div>
+                        <h1 class="name">Bunleap Pin</h1>
+                        <p class="title"> Student </p>
+                    </div>
+
+                    <button class="info-more" data-sidebar-btn>
+                        <span>Show Contacts</span>
+                        <i id="toggle-icon" class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                </div>
+
+                <div class="sidebar-info">
+
+                    <div class="separator"></div>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <p class="contact-title">Email</p>
+                                    <a
+                                        href="mailto:bunleappin@gmail.com" class="contact-link">
+                                        bunleappin@gmail.com
+                                    </a>
+                            </div>
+
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
+                                <a href="tel:+85511865519" class="contact-link">
+                                    +85511865519
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Address</p>
+                                <address>
+                                  Russei Keo, Toul Sangkae, Phnom Penh
+                                </address>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="https://www.facebook.com/pinbunleap" class="social-link">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="https://www.instagram.com/bunleapp_?fbclid=IwY2xjawSL7udleHRuA2FlbQIxMABicmlkETE2blJYTUx6WlM5UFMxVmVMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHnKIyBwsfDLWh4Ib0vtp_JRVse73hVeQhhdK8RPOqsBAhloGoF8uTCjkVFhy_aem_LdktMguF-CMz1iQVScBWkQ" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="https://www.linkedin.com/in/pin-bunleap-9099413a3/" class="social-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="https://github.com/Bunleapp" class="social-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+        </aside>
+
+        <div class="main-content">
+
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+               <header>
+                   <h2 class="article-title">About Me</h2>
+               </header>
+                <section class="about-text">
+                    <p>
+                        I am an Information Technology Engineering and English student with a strong interest in software development and web technologies.
+                        I enjoy building projects, learning new skills, and solving real-world problems through technology.
+                        I am committed to continuous improvement and eager to gain experience that will help me grow both professionally and personally.
+                    </p>
+                </section>
+            </article>
+
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="article-title">Resume</h2>
+                </header>
+                <section class="education">
+                    <div class="education-wrapper">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="title">Education</h3>
+                    </div>
+                    <ol class="education-list">
+
+                        <li class="education-item">
+                            <h4 class="education-title">Royal University of Phnom Penh (RUPP)</h4>
+                            <span>2025 - Present</span>
+                            <p class="education-info">Bachelor of Information Technology Engineering (ITE)</p>
+                        </li>
+
+                        <li class="education-item">
+                            <h4 class="education-title">Institute of Foreign Languages (IFL)</h4>
+                            <span>2025 - Present</span>
+                            <p class="education-info">Bachelor of English at Department of English</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="education-title">High School Graduated</h4>
+                            <span>2023 - 2024</span>
+                            <p class="education-info">Went to Monorom International School</p>
+                        </li>
+
+                    </ol>
+                </section>
+
+                <section class="Project">
+
+                    <div class="project-wrapper">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="title">Project</h3>
+                    </div>
+
+                    <ol class="project-list">
+
+                        <li class="project-item">
+                            <h4>Library Management System</h4>
+                            <span>Semester 1, Year 2</span>
+                            <p class="project-info">
+                                Using Java language to implement system to manage books and users in library
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <h4>Inventory Management System</h4>
+                            <span>Semester 2, Year 2</span>
+                            <p class="project-info">
+                                Using AI (Claude Code) to build a system for managing stock in, stock out, sales, monthly reports generated to csv and pdf files, connect to database (MongoDB), and deployed using Github for verson control, Renders (Backend) and Vite + React (Frontend).
+                                Purpose of these project to learn a basic of Web Development.
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <h4>Telegram Bot for Inventory Management</h4>
+                            <span>Semester 2, Year 2</span>
+                            <p class="project-info">
+                                Using AI (Cluade Code) for creating this Telegram Bot, Hosted by Railways, Database connect with Googlesheet
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <h4>Tourist Advertising</h4>
+                            <span>Semester 2, Year 2</span>
+                            <p class="project-info">
+                                Frontend Project for Web and Computing Course.
+                            </p>
+                        </li>
+
+                        <li class="project-item">
+                            <h4>Personal Portfolio</h4>
+                            <span>Semester 2, Year 2</span>
+                            <p class="project-info">
+                                Project Practicum
+                            </p>
+                        </li>
+
+                    </ol>
+                </section>
+            </article>
+
+            <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="article-title">Contact</h2>
+                </header>
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d816.3284752416776!2d104.91828429466564!3d11.599222841511127!3m2!1i1024!2i768!4f13.1!5e0!3m2!1skm!2skh!4v1780505059238!5m2!1skm!2skh"
+                            width="600" height="450" style="border:0;"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+
+                        </iframe>
+                    </figure>
+                </section>
+                <section class="contact">
+                    <h3 class="section-title">Contact Me</h3>
+                    <form action="#" class="form" data-form>
+
+                        <div class="input-form">
+                            <input type="text" class="input" placeholder="Full name" required data-input>
+                            <input type="email" class ="input" placeholder="Email address" required data-input>
+                        </div>
+
+                        <textarea name="message" class="input" placeholder="Your Message" required data-input></textarea>
+
+                        <button class="form-btn" type="submit" data-form-btn disabled>
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+
+                </section>
+            </article>
+        </div>
+    </main>
+
+</body>
+</html>
